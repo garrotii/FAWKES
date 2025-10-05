@@ -27,9 +27,10 @@
   ## 📄 Documentação
 
   Os arquivos de documentação estarão disponíveis na pasta `/docs`:
-  - `Manual_instalacao.pdf` – Passo a passo de instalação.  
-  - `Manual_execucao.pdf` – Como rodar e testar o sistema.  
-  - `Slides_Fawkes.pdf` – Apresentação do projeto (Sprint 4).  
+  - `Manual de instalacao.pdf` – Passo a passo de instalação.  
+  - `Manual de execucao.pdf` – Como rodar e testar o sistema.
+  - `Relatorio Fawkes.pdf` – Como rodar e testar o sistema.
+  - `Slides Fawkes.pdf` – Apresentação do projeto (Sprint 4).  
 
   ---
 
@@ -37,5 +38,5 @@
 
   ➡️ [Clique aqui para assistir ao vídeo do pitch e demonstração](https://youtu.be/ww5CFjXGVeE)
 
-  > O vídeo contém a explicação do projeto e uma demonstração prática mostrando a instalação e o Fawkes detectando um ataque ransomware real/simulado.  
+  > O vídeo contém a explicação do projeto e uma demonstração prática mostrando a instalação e o Fawkes detectando um ataque ransomware real
   
