@@ -1,0 +1,6 @@
+watchdog
+psutil
+PySide6
+yara-python
+wmi
+pywin32
