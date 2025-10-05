@@ -29,7 +29,7 @@
   Os arquivos de documentação estarão disponíveis na pasta `/docs`:
   - `Manual de instalacao.pdf` – Passo a passo de instalação.  
   - `Manual de execucao.pdf` – Como rodar e testar o sistema.
-  - `Relatorio Fawkes.pdf` – Como rodar e testar o sistema.
+  - `Relatorio Fawkes.pdf` – Relatório técnico.
   - `Slides Fawkes.pdf` – Apresentação do projeto (Sprint 4).  
 
   ---
