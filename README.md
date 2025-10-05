@@ -35,7 +35,7 @@
 
   ## 🎥 Vídeo (Pitch + Demonstração)
 
-  ➡️ [Clique aqui para assistir ao vídeo do pitch e demonstração](https://youtu.be/0QRg-xY89uw)
+  ➡️ [Clique aqui para assistir ao vídeo do pitch e demonstração](https://youtu.be/ww5CFjXGVeE)
 
   > O vídeo contém a explicação do projeto e uma demonstração prática mostrando a instalação e o Fawkes detectando um ataque ransomware real/simulado.  
   
