@@ -31,7 +31,7 @@ from PySide6.QtWidgets import (
     QMenu, QProgressBar, QListWidgetItem, QLineEdit, QGraphicsDropShadowEffect, QScrollArea, QSizePolicy
 )
 
-APP_NAME = "FAWKES Antivirus"
+APP_NAME = "FAWKES "
 CONFIG_PATH = str(Path.home() / ".fawkes_av.json")
 LOG_DIR = str(Path.home() / "FAWKES_AV_Logs")
 QUAR_DIR = str(Path.home() / "FAWKES_AV_Quarantine")
@@ -288,9 +288,9 @@ class HoneypotManager:
     def create_in(self, base):
         try:
             Path(base).mkdir(parents=True, exist_ok=True)
-            names = ["FAWKES_HONEYPOT_REPORT.docx", "FAWKES_HONEYPOT_INVOICE.xlsx", 
-                    "FAWKES_HONEYPOT_BACKUP.pdf", "FAWKES_HONEYPOT_MEDIA.jpg", 
-                    "FAWKES_HONEYPOT_KEYS.txt"]
+            names = ["_HONEYPOT_REPORT.docx", "_HONEYPOT_INVOICE.xlsx", 
+                    "_HONEYPOT_BACKUP.pdf", "_HONEYPOT_MEDIA.jpg", 
+                    "_HONEYPOT_KEYS.txt"]
             created = []
             
             if not os.access(base, os.W_OK):
@@ -323,14 +323,14 @@ class HoneypotManager:
             return []
     
     def is_honeypot(self, path):
-        return "FAWKES_HONEYPOT_" in os.path.basename(path)
+        return "_HONEYPOT_" in os.path.basename(path)
 
 class BlockUnsigned:
     def __init__(self, engine):
         self.engine = engine
         self.blocked_extensions = ['.exe', '.bat', '.cmd', '.vbs', '.js', '.ps1', '.msi', '.scr']
         self.whitelist_extensions = ['.py']
-        self.whitelist_files = ['Fawkes', 'python', 'pythonw']
+        self.whitelist_files = ['', 'python', 'pythonw']
         self.whitelist_paths = [os.path.abspath(__file__), sys.executable]
         self.downloads_folders = self._get_download_folders()
         self.stop_event = Event()
@@ -995,7 +995,7 @@ class FolderProtector:
 class SimpleLabel(QLabel):
     def __init__(self, parent=None):
         super().__init__(parent)
-        self.setText("FAWKES")
+        self.setText("")
         self.setAlignment(Qt.AlignCenter)
         self.setStyleSheet(f"color: {TEXT_LIGHT}; font-size: 28px; font-weight: 800; letter-spacing: 2px;")
 
@@ -1897,7 +1897,7 @@ class ConfigPage(QWidget):
     def save_autostart(self):
         try:
             key_path = r"Software\Microsoft\Windows\CurrentVersion\Run"
-            key_name = "FAWKES_AV"
+            key_name = "_AV"
             
             if self.auto_start.isChecked():
                 exe_path = sys.executable.replace("python.exe", "pythonw.exe")
@@ -1965,7 +1965,7 @@ class MainWindow(QMainWindow):
         self.timer.timeout.connect(self._tick)
         self.timer.start(1000)
         
-        QTimer.singleShot(800, lambda: self.statusBar().showMessage("FAWKES ativado"))
+        QTimer.singleShot(800, lambda: self.statusBar().showMessage(" ativado"))
         QTimer.singleShot(1000, self.engine.start)
     
     def _pix_from_b64(self, b):
